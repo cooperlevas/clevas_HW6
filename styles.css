@@ -1,0 +1,121 @@
+/* ========================================================================= */
+/* 1. REQUIRED ELEMENTS & GENERAL STYLING (Covers 6+ elements and background-color) */
+/* ========================================================================= */
+
+/* Element 1: Body (Set overall page style and background-color) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* REQUIRED: Use an external stylesheet to apply formatting including background-color */
+    color: #333;
+    line-height: 1.6;
+    margin: 0; /* Remove default browser margin */
+}
+
+/* Element 2: Header (Style the top section) */
+header {
+    background-color: navy; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #ffcd00; /* University of Iowa colors for a subtle touch */
+}
+
+/* Element 3: Main (Container for the primary content) */
+main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Element 4: Headings (Style the h2 elements) */
+h2 {
+    color: #0076a8;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Element 5: Navigation Links (Style the a tags within the nav) */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Element 6: Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    color: #666;
+    clear: both; /* Ensures the footer is below any floated content */
+}
+
+/* ========================================================================= */
+/* 2. BOX MODEL & CLASS (Fulfills box model and CSS class requirements) */
+/* ========================================================================= */
+
+/* Element 7 (and Box Model requirement): Aside (Used for Favorite Lists on index.html) */
+aside {
+    float: right; /* Puts the aside section on the right, next to the main text */
+    width: 30%;
+    
+    /* REQUIRED: Use a border and the box model (border, margin, and padding) */
+    border: 1px solid #0076a8; 
+    padding: 15px; /* Box Model: Padding */
+    margin-left: 20px; /* Box Model: Margin */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* REQUIRED: Use at least one CSS class for custom formatting */
+.photo-section-2 img {
+    /* Styles the campus image to be large but constrained */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 5px solid #ffcd00; /* Another box model application (border) */
+}
+
+/* ========================================================================= */
+/* 3. TABLE STYLING (Formats the schedule table) */
+/* ========================================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes space between cell borders */
+    margin: 25px 0;
+}
+
+/* Style for the table header cells (Time and Day headers) */
+thead th {
+    background-color: #0076a8; /* Dark blue background for headers */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Style for cells containing content */
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    /* Optional: Style to make class days stand out */
+}
+
+/* Style the Time column (which uses th in the body) */
+tbody th {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    color: #0076a8;
+}
+
+/* Highlight the cells that contain class names (Yellow background for classes) */
+td:not(:empty) {
+    background-color: #fffac2; /* Light yellow background */
+    font-weight: bold;
+}
